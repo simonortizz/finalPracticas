@@ -211,10 +211,21 @@
 
 /* MEDIA QUERY */
 @media screen and (max-width: 950px) {
+
+    * {
+        font-size: 98%;
+    }
+
     .header {
         flex-wrap: wrap;
         height: auto;
+        padding: 40px;
     }
+
+    .header img {
+        width: 55px;
+    }
+
 
     .portada {
         height: 300px;
@@ -242,6 +253,12 @@
         height: 100px;
     }
 
+
+
+    .aside-info {
+        margin-top: 50px;
+    }
+
     .section, .section2 {
         align-items: center;
     }
@@ -252,5 +269,11 @@
 
     .footer {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .aside-info {
+        margin-top: 80px;
     }
 }
