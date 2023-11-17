@@ -28,7 +28,7 @@
     grid-area: portada;
     width: 100%; 
     height: 500px; 
-    background-image: url('/Images/river.jpg'); 
+    background-image: url('/Images/Portada.png'); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -100,6 +100,7 @@
 
 .section2 {
     grid-area: section2;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -127,4 +128,129 @@
 }
 
 
+/* ASIDE 2 */
+.aside2 {
+    grid-area: aside2;
+    background-color: rgb(8, 0, 62);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    justify-content: space-evenly;
+}
 
+.aside2-titulo {
+    font-size: 35px;
+}
+
+.aside2-botones {
+    display: flex;
+    height: 100px;
+    width: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn1 {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: rgb(38, 38, 198);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(242, 238, 238);
+}
+
+.btn1:hover {
+    background-color: grey;
+    transition: all .5s;
+}
+
+.btn2:hover {
+    background-color: rgb(3, 63, 109);
+    transition: all .5s;
+}
+/* HORARIOS */
+.horarios {
+    grid-area: horarios;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.copyright, .autor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyright img, .autor img {
+    width: 45px;
+}
+
+
+/* MEDIA QUERY */
+@media (width <= 950px) {
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .portada {
+        height: 300px;
+    }
+}
+
+
+@media (width <= 780px) {
+    .container {
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "portada" 
+    "header"
+    "aside-info"
+    "section"
+    "section2"
+    "aside2"
+    "horarios"
+    "footer"
+    ;
+    }
+
+    .portada {
+        height: 100px;
+    }
+
+    .section, .section2 {
+        align-items: center;
+    }
+
+    .aside2-botones {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
