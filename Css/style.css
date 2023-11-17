@@ -210,7 +210,7 @@
 
 
 /* MEDIA QUERY */
-@media (width <= 950px) {
+@media screen and (max-width: 950px) {
     .header {
         flex-wrap: wrap;
         height: auto;
@@ -222,7 +222,7 @@
 }
 
 
-@media (width <= 780px) {
+@media screen and (max-width: 780px) {
     .container {
     grid-template-rows: repeat(8, auto);
     grid-template-columns: repeat(1, 1fr);
