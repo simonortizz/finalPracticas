@@ -253,6 +253,12 @@
     }
 }
 
+@media screen and (max-width:840px) {
+    .header {
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
 
 @media screen and (max-width: 780px) {
     .container {
@@ -306,6 +312,7 @@
     "articulacion"
     ;
     height: 100vh;
+    margin-top: 50px;
 }
 
 .aside2-botones {
