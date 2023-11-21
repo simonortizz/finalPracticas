@@ -259,6 +259,10 @@
     .aside2 {
         margin-top: 180px;
     }
+
+    .wifi img, .articulacion img, .laboratorio img, .biblioteca img {
+        filter: drop-shadow(0px 0px);
+    }
 }
 
 @media screen and (max-width:840px) {
@@ -307,6 +311,7 @@
     .copyright, .autor {
         flex-direction: column;
     }
+    
 }
 
 
