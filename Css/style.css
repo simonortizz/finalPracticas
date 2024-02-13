@@ -39,7 +39,7 @@ EDICIONES DE LA PAGINA DE INICIO
     grid-area: portada;
     width: 100%; 
     height: 500px; 
-    background-image: url('/Images/Portada.png'); 
+    background-image: url('/Images/instituto.png'); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -431,5 +431,3 @@ EDICIONES DE LA PAGINA DE INICIO
 }
 
 }
-
-
