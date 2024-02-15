@@ -63,20 +63,20 @@ EDICIONES DE LA PAGINA DE INICIO
 .header img {
     width: 70px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .header img:hover {
     transform: scale(1.2);
-    transition: all 1s;
 }
 
 .header a {
     text-decoration: none;
     color: white;
+    transition: all .3s ease-in-out;
 }
 
 .header a:hover {
-    transition: all .5s;
     color: slateblue;
 }
 
@@ -149,12 +149,12 @@ EDICIONES DE LA PAGINA DE INICIO
 
 .wifi img:hover, .articulacion img:hover, .laboratorio img:hover, .biblioteca img:hover {
     transform: translate(15px) ;
-    transition: all 1.5s;
     filter: drop-shadow(0px 0px);
 }
 
 .wifi img, .articulacion img, .laboratorio img, .biblioteca img {
     filter: drop-shadow(10px 10px 4px rgb(180, 180, 180));
+    transition: all .5s ease-in-out;
 }
 
 
@@ -226,13 +226,6 @@ EDICIONES DE LA PAGINA DE INICIO
     justify-content: space-evenly;
 }
 
-.btn1 {
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 20px;
-}
 
 .btn2 {
     background-color: rgb(38, 38, 198);
@@ -241,16 +234,12 @@ EDICIONES DE LA PAGINA DE INICIO
     border-radius: 10px;
     cursor: pointer;
     color: rgb(242, 238, 238);
+    transition: all .3s ease-in-out;
 }
 
-.btn1:hover {
-    background-color: grey;
-    transition: all .5s ease-in-out;
-}
 
 .btn2:hover {
     background-color: rgb(3, 63, 109);
-    transition: all .5s ease-in-out;
 }
 /* HORARIOS */
 .horarios {
