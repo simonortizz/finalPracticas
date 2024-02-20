@@ -209,7 +209,6 @@ EDICIONES DE LA PAGINA DE INICIO
     height: 250px;
     justify-content: space-evenly;
     margin-top: 120px;
-    margin-bottom: 50px;
     text-align: center;
     box-shadow: 0px 7px 8px black;
 }
@@ -244,14 +243,66 @@ EDICIONES DE LA PAGINA DE INICIO
 /* HORARIOS */
 .horarios {
     grid-area: horarios;
-    height: 300px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 70px;
+    gap: 10ox;
+}
+
+.contacto_form {
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.form input {
+    height: 50px;
 }
 
 
+.form_edit {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid rgb(159, 147, 235);
+    font-size: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.form_edit:focus {
+    outline: none;
+}
+
+
+.button_form {
+    background-color: rgb(38, 38, 198);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(242, 238, 238);
+    transition: all .3s ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.button_form:hover {
+    background-color: rgb(3, 63, 109);
+}
 
 /* FOOTER */
 .footer {
