@@ -128,8 +128,13 @@
           <h1 class="contacto_form">CONTACTO</h1>
         </div>
         <form class="form">
-          <input type="text" placeholder="Nombre" class="form_edit" />
-          <input type="mail" placeholder="Mail" class="form_edit" />
+          <input
+            type="text"
+            required=""
+            placeholder="Nombre"
+            class="form_edit"
+          />
+          <input type="mail" required="" placeholder="Mail" class="form_edit" />
           <textarea
             name=""
             id=""
@@ -138,9 +143,10 @@
             placeholder="Información adicional"
             class="form_edit"
           ></textarea>
+          <input type="submit" class="button_form" />
         </form>
         <div>
-          <button class="button_form">ENVIAR</button>
+          <!-- <button class="button_form" type="submit">ENVIAR</button> -->
         </div>
       </div>
       <!-- FOOTER -->
