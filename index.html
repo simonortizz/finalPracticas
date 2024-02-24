@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FINAL</title>
+    <title>ISFT 130</title>
     <!-- LINK CSS -->
     <link rel="stylesheet" href="Css/style.css" />
     <!-- ICONO EN PESTAÑA -->
@@ -127,14 +127,21 @@
         <div>
           <h1 class="contacto_form">CONTACTO</h1>
         </div>
-        <form class="form">
+        <form class="form" method="post" action="confirmar.php">
           <input
-            type="text"
-            required=""
+            type="name"
+            required
             placeholder="Nombre"
             class="form_edit"
+            name="nombre"
           />
-          <input type="mail" required="" placeholder="Mail" class="form_edit" />
+          <input
+            type="email"
+            required
+            placeholder="Mail"
+            class="form_edit"
+            name="mail"
+          />
           <textarea
             name=""
             id=""
